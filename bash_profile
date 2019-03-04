@@ -13,5 +13,15 @@ source $DOTFILES_PATH/environment
 source $DOTFILES_PATH/homebrew
 source $DOTFILES_PATH/rbenv
 source $DOTFILES_PATH/aliases
+source $DOTFILES_PATH/git-prompt.sh
 source $DOTFILES_PATH/ps1
 source $DOTFILES_PATH/heroku
+
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+export GOPATH=~/Dev
+export GH_BASE_DIR=~/Dev/src
+source ~/Dev/src/github.com/jdxcode/gh/bash/gh.bash
+source ~/Dev/src/github.com/jdxcode/gh/completions/gh.bash
+
+export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"

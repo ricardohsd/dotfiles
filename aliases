@@ -14,3 +14,9 @@ alias cp="cp -i"
 alias rm="rm -i"
 
 alias lock="open /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
+
+alias rcop-rb="git status | grep rb | grep -v spec | awk '{print $2}' | xargs bundle exec rubocop"
+alias rcopa-rb="git status | grep rb | grep -v spec | awk '{print $2}' | xargs bundle exec rubocop -a"
+alias rcop-spec="git status | grep rb | awk '{print $2}' | xargs bundle exec rubocop"
+alias rcopa-spec="git status | grep rb | awk '{print $2}' | xargs bundle exec rubocop -a"
+alias rspec-diff="git status | grep spec | awk '{print $2}' | xargs ./bin/rspec"
